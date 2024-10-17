@@ -21,6 +21,12 @@ let minerLevel = document.querySelector(".miner-level")
 let minerIncrease = document.querySelector(".miner-increase")
 let parsedMinerIncrease = parseFloat(minerIncrease.innerHTML)
 
+/*let passiveMining = document.querySelector('.passiveMining-cost')
+
+let passiveMiningLevel = document.querySelector(".passiveMining-level")
+let passiveMiningIncrease = document.querySelector(".passiveMining-increase")
+let parsedpassiveMiningIncrease = parseFloat(passiveMiningIncrease.innerHTML)*/
+
 function incrementGem()
 {
     gem.innerHTML = Math.round((parseFloat(gem.innerHTML))+gpc); //am creat o functie pentru a incrementa valoarea gem-ului
@@ -85,3 +91,23 @@ function buyMiner()
         miner.innerHTML= math.round(miner)
     }
 }
+
+/*function buypassiveMining()
+{
+    if (parseFloat(gem.innerHTML) >= passiveMining.innerHTML)
+    {
+        gem.innerHTML -= passiveMining.innerHTML;
+
+        passiveMiningLevel.innerHTML++;
+
+        parsedpassiveMiningIncrease=parseFloat((parsedpassiveMiningIncrease*1.03).toFixed(2))
+
+        passiveMiningIncrease.innerHTML= parsedpassiveMiningIncrease
+
+        gpc+=parsedpassiveMiningIncrease
+
+        parseFloat(passiveMining)*=1.18;
+
+        passiveMining.innerHTML= math.round(passiveMining)
+    }
+}*/
