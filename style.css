@@ -137,7 +137,7 @@ li a:hover
     align-items: center;
     width: 330px;
     height: 60px;
-    border: 1px solid rgb(203, 2, 2);
+    border: 1px solid #cb0202;
     padding: 10% 20%;
     border-radius: 10px;
     position: relative;
@@ -196,6 +196,11 @@ li a:hover
 .paragraph
 {
     font-size: larger;
+    padding: 10px;
+    text-align: center;
+}
+.lista{
+    text-align: center;
 }
 .h1text
 {
