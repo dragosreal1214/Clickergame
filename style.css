@@ -10,6 +10,7 @@ body
     background: linear-gradient(35deg, rgba(0,0,0,1) 6%, rgba(33,33,33,1) 47%, rgba(18,18,18,1) 92%);
     user-select: none; 
     box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
 }
 .meniu
 {
@@ -54,14 +55,16 @@ li a/*pentru meniu*/
     font-size: 20px;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
     
 }
 li a:hover
 {
-    background-color:#5a14dc;
+    background-color:rgb(203, 2, 2);
     color:white;
     padding: 30px 20px;
     cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -100,7 +103,7 @@ li a:hover
     align-items: center;
     width: 330px;
     height: 60px;
-    border: 1px solid #5a14dc;
+    border: 1px solid rgb(203, 2, 2);
     padding: 10% 20%;
     border-radius: 10px;
     position: relative;
@@ -143,7 +146,7 @@ li a:hover
     height: 80px;
     width: 100px;
     text-align: center;
-    background-color: #5a14dc;
+    background-color: rgb(203, 2, 2);
     display: none;
 }
 .upgrade:hover .next-level-info
@@ -162,7 +165,7 @@ li a:hover
 }
 .h1text
 {
-    color:#8A2BE2;
+    color:rgb(203, 2, 2);
 }
 ul
 {
