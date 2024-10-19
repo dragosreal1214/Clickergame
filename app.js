@@ -31,6 +31,9 @@ function incrementGem()
 {
     gem.innerHTML = Math.round((parseFloat(gem.innerHTML))+gpc); //am creat o functie pentru a incrementa valoarea gem-ului
 }
+function anim(){
+    document.getElementById("gem").className = "asii-image-animation";
+}
 
 function buyClicker()
 {
