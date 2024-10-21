@@ -77,7 +77,7 @@
                         </div>
                     </div>
                     <div class="right-section">
-                        Level <span class="Miner-level">0</span><!--practic dupa ce depaseste 50 gem-uri se trece la nivelul urmator-->
+                        Level <span class="miner-level">0</span><!--practic dupa ce depaseste 50 gem-uri se trece la nivelul urmator-->
                     </div>
                     <div class="next-level-info">
                         <p>
@@ -85,7 +85,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="upgrade" onclick="passiveMining()">
+                <div class="upgrade" onclick="upgradePassiveGemIncrease()">
                     <div class="left-section">
                         <img src="Images/mining.png" alt="" class="white-clicker-img">
                     </div>
@@ -101,7 +101,7 @@
                     </div>
                     <div class="next-level-info">
                         <p>
-                            +<span class="passiveMining-increase">16 gems</span><br/> per click<!--aici e ca un fel de hover -->
+                            <span class="passiveMining-increase">+1 gem</span><br/> per second<!--aici e ca un fel de hover -->
                         </p>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
 
         </div>
     </section>
-
+    <script src="mongodb.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(35deg, rgba(0,0,0,1) 6%, rgba(33,33,33,1) 47%, rgba(18,18,18,1) 92%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 20px;
+            color: white;
+            padding: 0;
+            background: linear-gradient(35deg, rgba(0, 0, 0, 1) 6%, rgba(33, 33, 33, 1) 47%, rgba(18, 18, 18, 1) 92%);
+            user-select: none;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
         }
+
         .review-container {
-            max-width: 600px;
+            width: 800px;
             margin: 0 auto;
             background-color: transparent;
-            padding: 20px;
+            padding: 0px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .review-container form {
+            width: 50%;
+            padding: 20px;
+            box-sizing: border-box;
         }
         h1 {
             text-align: center;
             color: white;
         }
+
         label {
             font-weight: bold;
             display: block;
             margin-top: 15px;
             color: white;
         }
-        input, textarea, select {
+
+        input,
+        textarea,
+        select {
             width: 100%;
             padding: 10px;
             margin-top: 5px;
             border-radius: 4px;
             border: 1px solid #ccc;
         }
+
         button {
             width: 100%;
             padding: 10px;
@@ -46,9 +69,11 @@
             cursor: pointer;
             margin-top: 20px;
         }
+
         button:hover {
             background-color: rgb(242, 2, 2);
         }
+
         /* Star rating CSS */
         .star-rating {
             display: flex;
@@ -56,57 +81,67 @@
             direction: rtl;
             font-size: 2rem;
         }
+
         .star-rating input {
             display: none;
         }
+
         .star-rating label {
             color: #ccc;
             cursor: pointer;
         }
-        .star-rating input:checked ~ label,
+
+        .star-rating input:checked~label,
         .star-rating label:hover,
-        .star-rating label:hover ~ label {
+        .star-rating label:hover~label {
             color: gold;
         }
-        .meniu{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
 
+        .meniu {
+            list-style-type: none;
+            display: inline;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: sticky;
         }
-        .meniu-item
-        {
+
+        .meniu-item {
             display: inline-block;
-        }    
-        li a/*pentru meniu*/
-        {
+        }
+
+        li a
+
+        /*pentru meniu*/
+            {
             display: block;
             text-align: center;
             padding: 0px 20px;
-            color: white;    
+            color: white;
             font-size: 20px;
             text-decoration: none;
             font-weight: bold;
             font-family: 'Courier New', Courier, monospace;
-            
+
         }
-        li a:hover
-        {
+
+        li a:hover {
             /* background-color:rgb(203, 2, 2); */
-            color:white;
+            color: white;
             padding: 0px 20px;
             cursor: pointer;
             font-family: 'Courier New', Courier, monospace;
         }
-        li h1:hover
-        {
-            color:white;
+
+        li h1:hover {
+            color: white;
         }
+
         .hover-underline-animation {
             display: inline-block;
             position: relative;
         }
-        
+
         .hover-underline-animation::after {
             content: '';
             position: absolute;
@@ -118,18 +153,25 @@
             background-color: white;
             transition: transform 0.25s ease-out;
         }
+
         .hover-underline-animation:hover::after {
             transform: scaleX(1);
         }
-        
     </style>
 </head>
+
 <body>
     <nav>
         <ul class="meniu">
-            <li class="meniu-item hover-underline-animation center"><h1><a href="index.html">Home</a></h1></li>
-            <li class="meniu-item hover-underline-animation center"><h1><a href="about.html">About</a></h1></li>
-            <li class="meniu-item hover-underline-animation center"><h1><a href="testimonial.html">Testimonial</a></h1></li>
+            <li class="meniu-item">
+                <h1><a class="hover-underline-animation center" href="index.html">Home</a></h1>
+            </li>
+            <li class="meniu-item">
+                <h1><a class="hover-underline-animation center" href="about.html">About</a></h1>
+            </li>
+            <li class="meniu-item">
+                <h1><a class="hover-underline-animation center" href="testimonial.html">Testimonial</a></h1>
+            </li>
         </ul>
     </nav>
 
@@ -144,29 +186,30 @@
                 <label for="rating">Rating:</label>
                 <div class="star-rating">
                     <input type="radio" id="star5" name="rating" value="5">
-                     <label for="star5">&#9733;</label>
-                
+                    <label for="star5">&#9733;</label>
+
                     <input type="radio" id="star4" name="rating" value="4">
                     <label for="star4">&#9733;</label>
-                
+
                     <input type="radio" id="star3" name="rating" value="3">
                     <label for="star3">&#9733;</label>
-                
+
                     <input type="radio" id="star2" name="rating" value="2">
                     <label for="star2">&#9733;</label>
-                
+
                     <input type="radio" id="star1" name="rating" value="1">
                     <label for="star1">&#9733;</label>
                 </div>
             </div>
-            
+
 
             <label for="message">Your Review:</label>
             <textarea id="message" name="message" rows="5" placeholder="Write your review here" required></textarea>
-            <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
-                <button type="submit">Submit Review</button>
-            </div>
+            <button type="submit">Submit Review</button>    
         </form>
+        <div style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+        </div>
     </div>
 </body>
+
 </html>
