@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--<script type="text/javascript" src="app.js"></script>-->
+    <title>CLICKER GAME</title>
+</head>
+<body>
+    <nav>
+        <ul class="meniu">
+            <li class="meniu-item "><h1><a class="hover-underline-animation center" href=#game>Home</a></h1></li>
+            <li class="meniu-item "><h1><a class="hover-underline-animation center" href="about.html">About</a></h1></li>
+            <li class="meniu-item "><h1><a class="hover-underline-animation center" href="testimonial.html">Testimonial</a></h1></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="game" class="main">
+            <div class="left">
+                <h2>Gem:<span class="gem-cost">0</span></h2>
+                <img src="Images/logo_asii.webp" alt="asii" srcset="" class="asii-image" id="asii-image" onclick="incrementGem()" draggable="false">
+            </div>
+            <div class="right">
+               
+                <div class="upgrade" onclick="buyClicker()">
+                    <div class="left-section">
+                        <img src="Images/white-clicker.png" alt="" class="white-clicker-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Clicker</h4>
+                        <div class="cost-info">
+                            <p>Cost:<span class="clicker-cost">10</span></p><!--cand trece de 10 va scadea din numarul curent de gem-uri 10 -->
+                            <img src="Images/asii.png" alt="" class="asii-img">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        Level <span class="clicker-level">0</span><!--practic dupa ce depaseste 10 gem-uri se trece la nivelul urmator-->
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="clicker-increase">1 gems</span><br/> per click<!--aici e ca un fel de hover -->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyPickaxe()">
+                    <div class="left-section">
+                        <img src="Images/pickaxe.png" alt="" class="white-clicker-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Pickaxe</h4>
+                        <div class="cost-info">
+                            <p>Cost:<span class="pickaxe-cost">30</span></p><!--cand trece de 30 va scadea din numarul curent de gem-uri 30 -->
+                            <img src="Images/asii.png" alt="" class="asii-img">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        Level <span class="pickaxe-level">0</span><!--practic dupa ce depaseste 30 gem-uri se trece la nivelul urmator-->
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="pickaxe-increase">4 gems</span><br/> per click<!--aici e ca un fel de hover -->
+                        </p>
+                    </div>
+                </div>
+
+                <div class="upgrade" onclick="buyMiner()">
+                    <div class="left-section">
+                        <img src="Images/miner.png" alt="" class="white-clicker-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Miner</h4>
+                        <div class="cost-info">
+                            <p>Cost:<span class="miner-cost">50</span></p><!--cand trece de 50 va scadea din numarul curent de gem-uri 50 -->
+                            <img src="Images/asii.png" alt="" class="asii-img">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        Level <span class="miner-level">0</span><!--practic dupa ce depaseste 50 gem-uri se trece la nivelul urmator-->
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            +<span class="miner-increase">8 gems</span><br/> per click<!--aici e ca un fel de hover -->
+                        </p>
+                    </div>
+                </div>
+                <div class="upgrade" onclick="upgradePassiveGemIncrease()">
+                    <div class="left-section">
+                        <img src="Images/mining.png" alt="" class="white-clicker-img">
+                    </div>
+                    <div class="mid-section">
+                        <h4>Passive</h4>
+                        <div class="cost-info">
+                            <p>Cost:<span class="passiveMining-cost">75</span></p><!--cand trece de 50 va scadea din numarul curent de gem-uri 50 -->
+                            <img src="Images/asii.png" alt="" class="asii-img">
+                        </div>
+                    </div>
+                    <div class="right-section">
+                        Level <span class="passiveMining-level">0</span><!--practic dupa ce depaseste 50 gem-uri se trece la nivelul urmator-->
+                    </div>
+                    <div class="next-level-info">
+                        <p>
+                            <span class="passiveMining-increase">+1 gem</span><br/> per second<!--aici e ca un fel de hover -->
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
